@@ -208,8 +208,12 @@ br{
         background: none;
         padding: 12px 14px;
         border-radius: 16px;
+    }
+  a.slicknav_btn.slicknav_open {
         background: #fff5e3;
     }
+
+
     .slicknav_menu .slicknav_icon-bar {
         background-color: #fbaf3f;
         width: 27px;
@@ -371,14 +375,6 @@ br{
     
     .navigationBox {
         grid-template-columns: 12fr;
-    }
-    
-    .singleNavigation {
-        border-color: #8ec340;
-    }
-    
-    .singleNavigation a {
-        background: #8ec340;
     }
     
     .stickyNav {
