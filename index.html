@@ -562,7 +562,41 @@
 
           <div class="row">
             <div class="col-12">
-              <div class="contactBoxGrid">
+              <div class="tabNavWrap">
+                <ul class="nav contactBoxGrid" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active singleContactBox" id="form1-tab" data-toggle="tab" href="#form1" role="tab" aria-controls="form1" aria-selected="true">
+                      <h4>Sign up for McGraw Hill’s complimentary onboarding training for Direct Instruction</h4>
+                      <p>Online / In-person</p>
+                      <span class="schoolLink">1</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link singleContactBox" id="form2-tab" data-toggle="tab" href="#form2" role="tab" aria-controls="form2" aria-selected="false">
+                      <h4>Explore on-going paid professional development opportunities</h4>
+                      <p>Online / In-person</p>
+                      <span class="schoolLink">2</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link singleContactBox" id="form3-tab" data-toggle="tab" href="#form3" role="tab" aria-controls="form3" aria-selected="false">
+                      <h4>Sign up for a DI clinic (every Monday, starting Feb 10)</h4>
+                      <p>Online / In-person</p>
+                      <span class="schoolLink">3</span>
+                      
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link singleContactBox" id="form4-tab" data-toggle="tab" href="#form4" role="tab" aria-controls="form4" aria-selected="false">
+                      <h4>Request help with something I can’t find answers to here</h4>
+                        <p>Online / In-person</p>
+                      <span class="schoolLink">4</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contactBoxGrid mt-5 d-none">
                 <div class="singleContactBox">
                   <a href="#">
                     <h4>Sign up for McGraw Hill’s complimentary onboarding training for Direct Instruction</h4>
@@ -592,17 +626,43 @@
                   </a>
                 </div>
               </div>
-              <div class="contactForm">
-               <div class="formWrap">
-                <script src="//info.mheducation.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_20927"></form> <script>MktoForms2.loadForm("//info.mheducation.com", "128-SJW-347", 20927);</script>
-                PD development
-                <script src="//info.mheducation.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_20928"></form> <script>MktoForms2.loadForm("//info.mheducation.com", "128-SJW-347", 20928);</script>
-                DI Clinic
-                <script src="//info.mheducation.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_20931"></form> <script>MktoForms2.loadForm("//info.mheducation.com", "128-SJW-347", 20931);</script>
-                Help
-                <script src="//info.mheducation.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_20924"></form> <script>MktoForms2.loadForm("//info.mheducation.com", "128-SJW-347", 20924);</script>
-               </div>
 
+              <div class="tabWrap">
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="form1" role="tabpanel" aria-labelledby="form1-tab">
+                    <div class="contactForm">
+                      <div class="formWrap">
+                        <script src="//info.mheducation.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_20927"></form> <script>MktoForms2.loadForm("//info.mheducation.com", "128-SJW-347", 20927);</script>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="form2" role="tabpanel" aria-labelledby="form2-tab">
+                    <div class="contactForm">
+                      <div class="formWrap">
+                        PD development
+                        <script src="//info.mheducation.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_20928"></form> <script>MktoForms2.loadForm("//info.mheducation.com", "128-SJW-347", 20928);</script>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="form3" role="tabpanel" aria-labelledby="form3-tab">
+                    <div class="contactForm">
+                      <div class="formWrap">
+                        DI Clinic
+                        <script src="//info.mheducation.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_20931"></form> <script>MktoForms2.loadForm("//info.mheducation.com", "128-SJW-347", 20931);</script>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="form4" role="tabpanel" aria-labelledby="form4-tab">
+                    <div class="contactForm">
+                      <div class="formWrap">
+                        Help
+                        <script src="//info.mheducation.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_20924"></form> <script>MktoForms2.loadForm("//info.mheducation.com", "128-SJW-347", 20924);</script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -707,6 +767,8 @@
      
     <!-- jquery.js -->
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <!-- slicknav.min.js -->
     <script src="assets/js/jquery.slicknav.min.js"></script>
     <!-- jquery.carousel.min.js -->
