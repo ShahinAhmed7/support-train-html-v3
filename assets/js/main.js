@@ -94,6 +94,25 @@
             })
         }
 
+        $('.clickme').click(function () {
+            $('.nav .nav-link').removeClass('active');
+            $('.nav .nav3').addClass('active');
+        });
+
+
+        
+        $('a[href^="#tabArea"], a[href^="#onboarding"], a[href^="#development"], a[href^="#school"], a[href^="#library"]').on('click',function (e) {
+          e.preventDefault();
+          var target = this.hash;
+          var $target = $(target);
+          $('html, body').stop().animate({
+              'scrollTop': $target.offset().top -120
+          }, 900, 'swing', function () {
+              // window.location.hash = target;
+          });
+      });
+
+      
 
 
 
